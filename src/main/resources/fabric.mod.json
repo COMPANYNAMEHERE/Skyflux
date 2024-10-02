@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "skyflux",
+	"version": "${version}",
+	"name": "SkyFlux",
+	"description": "Look at dem Clouds",
+	"authors": [
+		"josso"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/skyflux/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.josso.skyflux.SkyFlux"
+		],
+		"client": [
+			"net.josso.skyflux.SkyFluxClient"
+		],
+		"fabric-datagen": [
+			"net.josso.skyflux.SkyFluxDataGenerator"
+		]
+	},
+	"mixins": [
+		"skyflux.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
